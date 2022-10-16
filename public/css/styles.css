@@ -1,92 +1,262 @@
-body{
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
     font-family: 'Roboto';
 }
 
-.main-header{
+img {
+    max-width: 100vw;
+}
+
+.main-header {
     background-color: #EAC926;
 }
 
 
-p{
+p {
     font-size: 12px;
     margin-top: 0px;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     font-size: 24px;
 }
 
-.precio{
+.precio {
     font-size: 18px;
 }
 
-.descuento{
+.descuento {
     font-size: 16px;
 }
 
-.descripcion{
+.descripcion {
     font-size: 16px;
 }
 
-.burger-menu{
-text-align: center;
+.burger-menu {
+    text-align: center;
+    color: white;
+    line-height: 60px;
 }
 
-.fas.fa-bars{
+
+.fas.fa-bars {
     background-color: #0045ab;
     padding: 10px;
     border-radius: 6px;
 }
 
-.fas.fa-search{
+i.fa-search {
     background-color: white;
     padding: 2px;
     border-radius: 4px;
+    color: #666;
+
 }
 
-.promociones{
+
+
+footer {
     text-align: center;
 }
 
-footer{
-    text-align: center;
-}
-
-.fas.fa-credit-card, .fas.fa-gift, .fas.fa-user-shield {
-font-size: 2em;
-margin-bottom: 10px;
-color: #03264C;
+i.fas.fa-credit-card,
+i.fas.fa-gift,
+i.fas.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
 
 }
 
-.copyright{
-   text-align: left;
-   margin-top: 40px;
+.copyright {
+    text-align: left;
+    margin-top: 40px;
 }
 
-.titular{
+.titular {
     margin-bottom: 0px;
 }
 
-main{
+main {
     width: 90vw;
     margin: auto;
 }
 
-.productos{
-margin: 10px;
+article {
+    margin: 10px;
 }
 
-.articulo{
+.articulo {
     border-top: solid 1px #ebebeb;
     padding: 15px
 }
 
-@media(min-width: 361px){
-    body{
-        box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
-}}
+.descuento {
+    color: #39b54a;
+}
 
-@media(min-width: 361px){
-   body{box-shadow: 0px 0px 10px rgb ( 100 , 100 , 100 );
-}}
+.barra-navegacion,
+.descripcion {
+    display: none;
+}
+
+.titular {
+    color: #666;
+}
+
+.fas.fa-truck {
+    color: #39b54a;
+}
+
+
+.flex-conteiner {
+    display: flex;
+}
+
+.precio {
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+}
+
+
+.fas.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+  
+    right: 20px;
+    top: -15px
+}
+
+
+
+.flex-productos {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form{
+    width: 50%;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;  
+    color: #03264C;
+    height: 100%;
+    align-self: center;
+  
+}
+
+.encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+.logo{
+    margin: 20px 0px 20px 0px;
+    width: 50%;
+}
+ 
+
+
+
+@media(min-width: 425px) {
+    .barra-navegacion,
+    .descripcion {
+        display: block;
+    }
+
+    article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .flex-productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-productos article{
+        width: 44%;
+    }
+
+    .form{
+        align-self: center;
+    }
+
+
+    section.barra-navegacion{
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+        padding: 11px
+    }
+    
+    .encabezado{
+        display: flex;
+        flex-flow: nowrap;
+        justify-content: space-between;
+    }
+
+    .promociones{
+        align-self: auto;
+        padding: 5px 5px;
+        margin: 10px 0px 10px 0px;
+        height: 2rem;
+    }
+
+    .barra-nav1{
+       justify-content: start;
+       font-size: 14px;
+    }
+    .barra-nav2{  
+       justify-content: end;
+       font-size: 14px;
+    }
+    
+    a{
+        padding: 14px;
+    }
+
+
+    .logo, .form, .promociones{
+        flex-grow: 100;
+    }
+
+
+}
+
+@media(min-width: 769px) {
+    .flex-productos article{
+        width: 20%;
+    }
+
+    .promociones{
+        align-self: center;
+    }
+}
