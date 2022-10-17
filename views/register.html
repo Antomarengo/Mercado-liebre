@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="css/stylesregister.css" rel="stylesheet">
+    <title> Formulario de Registro </title>
 </head>
+
 <body>
     <header class="main-header">
         <section class="encabezado">
 
             <!-- LOGO -->
-                <div class="logo">
-                    <img class="logo-ml" src="imagenes/logo-mercado-liebre.svg" alt="Logo mercado liebre">
-                </div>
+            <div class="logo">
+                <img class="logo-ml" src="imagenes/logo-mercado-liebre.svg" alt="Logo mercado liebre">
+            </div>
 
-                  <!-- BARRA BUSQUEDA -->
-                <div class="form" action="/" method="GET">
-                    <input class="barra-busqueda" type="text" name="buscar" id="buscar"
-                        placeholder="Buscar productos, marcas y mas">
-                    <span class="boton-busqueda">
-                        <button type="submit"> <i class="fa fa-search"></i> </button>
-                    </span>
-                </div>
+            <!-- BARRA BUSQUEDA -->
+            <div class="form" action="/" method="GET">
+                <input class="barra-busqueda" type="text" name="buscar" id="buscar"
+                    placeholder="Buscar productos, marcas y mas">
+                <span class="boton-busqueda">
+                    <button type="submit"> <i class="fa fa-search"></i> </button>
+                </span>
+            </div>
 
             <!-- PROMOCIONES -->
-            
-                <div class="promociones">
-                    <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de
-                        credito  
-                </div>
-        
-            
+
+            <div class="promociones">
+                <i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de
+                credito
+            </div>
 
         </section>
 
@@ -63,5 +68,127 @@
 
     </header>
 
+    <!-- FORMULARIO DE REGISTRO -->
+    <form class="registro" action="/" method="post">
+        <fieldset class="formularioRegistro">
+            <div class="titular">
+                <h3>REGISTRARSE</h3>
+            </div>
+            <fieldset class="datosPersonales">
+                <div>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                </div>
+
+                <div>
+                    <input type="text" name="NombreUsuario" id="NombreUsuario" placeholder="Nombre de usuario">
+                </div>
+
+                <div>
+                    <label class="fechaNacimiento" for="fecha"> Fecha de nacimiento </label>
+                </div>
+
+                <div>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+
+                <div>
+                    <input type="text" name="Domicilio" id="Domicilio" placeholder="Domicilio">
+                </div>
+            </fieldset>
+
+            <fieldset class="PerfilUsuario">
+                <div>
+                    <p class="tituloUsuario">Perfil del usuario</p>
+                    <label class="comprador" for=Comprador> Comprador <input type="radio" name="Comprador-vendedor"
+                            value="Comprador">
+                    </label>
+
+                    <label class="vendedor" for=Vendedor> Vendedor <input type="radio" name="Comprador-vendedor"
+                            value="Vendedor"></label>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset class="checkboxCategoria">
+
+                <p class="SeleccioneCategoria"> Intereses </p>
+
+                <label> Electro <input type="checkbox" name="categoria" value="Electro"> </label>
+                <label> Moda <input type="checkbox" name="categoria" value="Moda"> </label>
+                <label> Hogar <input type="checkbox" name="categoria" value="Hogar"> </label>
+                <label> Jugueteria <input type="checkbox" name="categoria" value="Jugueteria"> </label>
+                <label> Vida sana <input type="checkbox" name="categoria" value="Vida sana"> </label>
+
+            </fieldset>
+
+            <fieldset class="foto">
+                <div>
+                    <label class="FotoUsuario"> Foto de usuario </label>
+                </div>
+
+                <div>
+                    <input class="usuario" type="file" name="avatar" accept=".jpg, .png, jpeg">
+                </div>
+            </fieldset>
+
+            <fieldset class="Contraseña">
+                <div>
+                    <input type="password" name="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <input type="password" name="ConfirmarPassword" placeholder="Confirmar contraseña">
+                </div>
+
+            </fieldset>
+
+            <div>
+                <button type="submit"> Enviar </button>
+
+                <button type="Reset"> Borrar </button>
+            </div>
+
+        </fieldset>
+
+    </form>
+
+    <footer>
+        <section>
+            <ul type="none">
+                <li>
+                    <i class="fas fa-credit-card"></i>
+                    <h3> Pagá con tarjeta o en efectivo </h3>
+                    <p class="piePagina"> Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                        puntos de pago. ¡Y siempre es seguro!
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-gift"></i>
+                    <h3> Envío gratis desde $ 2.500 </h3>
+                    <p class="piePagina"> Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                        productos. Es un beneficio de Mercado Puntos.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-user-shield"></i>
+                    <h3> Seguridad, de principio a fin </h3>
+                    <p class="piePagina"> ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                        porque estás siempre protegid@.
+                    </p>
+                </li>
+                <li class="copyright">
+                    <p class="piePagina">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+                </li>
+
+            </ul>
+
+        </section>
+
+
+    </footer>
+
 </body>
+
+
 </html>

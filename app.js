@@ -12,9 +12,16 @@ app.listen(puerto, ()=> console.log("Servidor levantado"))
 app.get("/", (req, res) => {
     res.sendFile(path.resolve('views/home.html'))
 })
-app.post("/register", (req, res) => {
+app.get("/registro", (req, res) => {
     res.sendFile(path.resolve('views/register.html'))
 })
-app.post("/login", (req, res) => {
+app.post("/", (req, res) => {
+    res.sendFile(path.resolve('views/register.html'))
+})
+app.get("/login", (req, res) => {
+    res.sendFile(path.resolve('views/login.html'))
+})
+
+app.post("/", (req, res) => {
     res.sendFile(path.resolve('views/login.html'))
 })
