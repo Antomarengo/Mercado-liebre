@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Roboto';
 }
@@ -17,26 +16,10 @@ img {
     background-color: #EAC926;
 }
 
-
-
-
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-size: 24px;
 }
 
-.precio {
-    font-size: 18px;
-}
-
-.descuento {
-    font-size: 16px;
-}
-
-.descripcion {
-    font-size: 16px;
-}
 
 .burger-menu {
     text-align: center;
@@ -56,7 +39,28 @@ i.fa-search {
     padding: 2px;
     border-radius: 4px;
     color: #666;
+}
 
+
+.barra-navegacion, .descripcion {
+    display: none;
+}
+
+.titular {
+    color: #666;
+}
+
+
+.encabezado {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+
+.logo {
+    margin: 20px 0px 20px 0px;
+    width: 50%;
 }
 
 .titular {
@@ -68,13 +72,15 @@ main {
     margin: auto;
 }
 
+
 article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
     margin: 10px;
 }
 
-.articulo {
-    border-top: solid 1px #ebebeb;
-    padding: 15px
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100 100 100)
 }
 
 .descuento {
@@ -86,12 +92,12 @@ article {
     display: none;
 }
 
-.titular {
-    color: #666;
+.descripcion:hover{
+    display: block;
 }
 
-.fas.fa-truck {
-    color: #39b54a;
+.titular {
+    color: #666;
 }
 
 
@@ -117,9 +123,12 @@ article {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-  
     right: 20px;
-    top: -15px
+    top: -15px;
+    color: #39b54a
+}
+.fas.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 
 
@@ -127,6 +136,7 @@ article {
 .flex-productos {
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 
@@ -140,8 +150,9 @@ article {
     color: #03264C;
     height: 100%;
     align-self: center;
-  
+
 }
+
 
 .encabezado{
     display: flex;
@@ -169,7 +180,6 @@ i.fas.fa-user-shield {
     font-size: 2em;
     margin-bottom: 10px;
     color: #03264C;
-
 }
 
 .copyright {
@@ -257,6 +267,19 @@ i.fas.fa-user-shield {
 @media(min-width: 769px) {
     .flex-productos article{
         width: 20%;
+    }
+    
+    .lista-footer{
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .fas.fa-user-shield:hover, .fas.fa-gift:hover, .fas.fa-credit-card:hover {
+        color:rgb(103, 99, 99)
+    }
+
+    .piePagina{
+        padding: 7px;
     }
 
 }

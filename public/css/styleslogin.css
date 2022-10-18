@@ -135,6 +135,18 @@ i.fa-search {
     .flex-productos article{
         width: 20%;
     }
+    .lista-footer{
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    .fas.fa-user-shield:hover, .fas.fa-gift:hover, .fas.fa-credit-card:hover {
+        color:rgb(103, 99, 99)
+    }
+
+    .piePagina{
+        padding: 7px;
+    }
 
 }
 
@@ -201,6 +213,10 @@ input  {
     margin: 10px 4vw;
     flex-flow: row wrap;
     width: 50%;
+}
+
+.botonEnviar:hover{
+    background-color: #0022AA;
 }
 
 
