@@ -12,6 +12,9 @@ img {
     max-width: 100vw;
 }
 
+
+/*//*//*//*//*//* HEADER /*//*//*//*//*/
+
 .main-header {
     background-color: #EAC926;
 }
@@ -21,17 +24,33 @@ h1, h2, h3 {
 }
 
 
-.burger-menu {
-    text-align: center;
-    color: white;
-    line-height: 60px;
+.encabezado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 20px 0px 20px 0px;
+    width: 50%;
 }
 
 
-.fas.fa-bars {
-    background-color: #0045ab;
-    padding: 10px;
-    border-radius: 6px;
+.barra-busqueda{
+    width: 30vw;
+}
+
+
+.form{
+    width: 50%;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;  
+    color: #03264C;
+    height: 100%;
+    align-self: center;
+
 }
 
 i.fa-search {
@@ -48,36 +67,92 @@ i.fa-search {
 
 .titular {
     color: #666;
+    margin-bottom: 0px;
 }
 
-.form {
-    width: 50%;
-    font-size: 10px;
-    padding: 5px;
-    border-radius: 5px;
+.burger-menu {
     text-align: center;
+    color: white;
+    line-height: 60px;
+}
+
+.fas.fa-bars {
+    background-color: #0045ab;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+
+/*/ FOOTER /*/
+
+footer {
+    text-align: center;
+}
+
+i.fas.fa-credit-card,
+i.fas.fa-gift,
+i.fas.fa-user-shield {
+    font-size: 2em;
+    margin-bottom: 10px;
     color: #03264C;
-    height: 100%;
-    align-self: center;
 
 }
 
-.encabezado {
+.copyright {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.piePagina {
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+
+/*/ LOGIN /*/
+
+.login {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    width: 100%;
+    padding: 20px 1px 20px 1px;
+    background-color: #dde5e9e3;
+    border-radius: 5px;
 }
 
+.formularioLogin{
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+    flex-flow: column wrap;
+    padding: 10px;
+}
 
-.logo {
-    margin: 20px 0px 20px 0px;
+input  {    
+    width: 50%;
+    border-radius: 5px;
+    margin-bottom: 11px;
+    padding: 4px;
+}
+
+.botonEnviar{ 
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1259c3;
+    color: white;
+    height: 2rem;
+    border-radius: 4px;
+    margin: 10px 4vw;
+    flex-flow: row wrap;
     width: 50%;
 }
 
-.barra-busqueda{
-    width: 30vw;
+.botonEnviar:hover{
+    background-color: #0022AA;
 }
 
+
+   
 /*/ MEDIAS QUERIES /*/
 
 @media(min-width: 425px) {
@@ -154,75 +229,4 @@ i.fa-search {
 
 }
 
-
-/*/ FOOTER /*/
-
-footer {
-    text-align: center;
-}
-
-i.fas.fa-credit-card,
-i.fas.fa-gift,
-i.fas.fa-user-shield {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #03264C;
-
-}
-
-.copyright {
-    text-align: left;
-    margin-top: 40px;
-}
-
-.piePagina {
-    font-size: 12px;
-    margin-top: 0px;
-}
-
-
-/*/ LOGIN /*/
-
-.login {
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    padding: 20px 1px 20px 1px;
-    background-color: #dde5e9e3;
-    border-radius: 5px;
-}
-
-.formularioLogin{
-    justify-content: center;
-    text-align: center;
-    margin: 10px 0px;
-    flex-flow: column wrap;
-    padding: 10px;
-}
-
-input  {    
-    width: 50%;
-    border-radius: 5px;
-    margin-bottom: 11px;
-    padding: 4px;
-}
-
-.botonEnviar{ 
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #1259c3;
-    color: white;
-    height: 2rem;
-    border-radius: 4px;
-    margin: 10px 4vw;
-    flex-flow: row wrap;
-    width: 50%;
-}
-
-.botonEnviar:hover{
-    background-color: #0022AA;
-}
-
-
-   
 

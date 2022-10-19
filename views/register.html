@@ -77,22 +77,28 @@
             <fieldset class="datosPersonales">
                 <div>
                     <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+                    <span class="feedback"></span>
                 </div>
+
 
                 <div>
                     <input type="text" name="NombreUsuario" id="NombreUsuario" placeholder="Nombre de usuario">
+                    <span class="feedback"></span>
                 </div>
 
                 <div>
                     <label class="fechaNacimiento" for="fecha"> Fecha de nacimiento </label>
+                    <span class="feedback"></span>
                 </div>
 
                 <div>
                     <input type="date" name="fecha" id="fecha">
+                    <span class="feedback"></span>
                 </div>
 
                 <div>
                     <input type="text" name="Domicilio" id="Domicilio" placeholder="Domicilio">
+                    <span class="feedback"></span>
                 </div>
             </fieldset>
 
@@ -135,18 +141,20 @@
             <fieldset class="Contraseña">
                 <div>
                     <input type="password" name="password" placeholder="Contraseña">
+                    <span class="feedback"></span>
                 </div>
 
                 <div>
                     <input type="password" name="ConfirmarPassword" placeholder="Confirmar contraseña">
+                    <span class="feedback"></span>
                 </div>
 
             </fieldset>
 
             <div>
-                <button type="submit"> Enviar </button>
+                <button class="botonForm" type="submit"> Enviar </button>
 
-                <button type="Reset"> Borrar </button>
+                <button class="botonForm" type="Reset"> Borrar </button>
             </div>
 
         </fieldset>
