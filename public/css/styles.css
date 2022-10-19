@@ -67,6 +67,10 @@ i.fa-search {
     margin-bottom: 0px;
 }
 
+.barra-busqueda{
+    width: 30vw;
+}
+
 main {
     width: 90vw;
     margin: auto;

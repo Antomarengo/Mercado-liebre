@@ -74,6 +74,10 @@ i.fa-search {
     width: 50%;
 }
 
+.barra-busqueda{
+    width: 30vw;
+}
+
 /*/ MEDIAS QUERIES /*/
 
 @media(min-width: 425px) {

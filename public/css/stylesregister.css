@@ -84,6 +84,9 @@ i.fa-search {
     width: 50%;
 }
 
+.barra-busqueda{
+    width: 30vw;
+}
 
 
 @media(min-width: 425px) {
