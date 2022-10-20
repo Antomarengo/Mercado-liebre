@@ -35,6 +35,10 @@ h1, h2, h3 {
     width: 50%;
 }
 
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .barra-busqueda{
     width: 30vw;
@@ -219,11 +223,8 @@ i.fas.fa-user-shield {
         justify-content: space-between;
     }
 
-    .promociones{
-        padding: 5px 5px;
-        margin: 10px 0px 10px 0px;
-        height: 2rem;
-        align-self: center;
+     .promociones{
+        margin: auto;
     }
 
     .barra-nav1{
@@ -243,6 +244,8 @@ i.fas.fa-user-shield {
     .logo, .form, .promociones{
         flex-grow: 100;
     }
+
+    
 
 
 }

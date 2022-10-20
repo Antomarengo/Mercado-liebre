@@ -35,6 +35,10 @@ h1, h2, h3 {
     width: 50%;
 }
 
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}  
 
 .barra-busqueda{
     width: 30vw;

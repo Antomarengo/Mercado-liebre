@@ -13,11 +13,7 @@ img {
 }
 
 
-/*//*/
-/*//*/
-/*//* HEADER /*/
-/*//*/
-/*//*/
+/*//*//*//*//*//* HEADER /*//*//*//*//*/
 
 .main-header {
     background-color: #EAC926;
@@ -41,6 +37,10 @@ h3 {
     width: 50%;
 }
 
+a{
+    cursor: pointer;
+    text-decoration: underline;
+}
 
 .barra-busqueda {
     width: 30vw;
@@ -90,17 +90,14 @@ i.fa-search {
 }
 
 
+.logo,
+    .form,
+    .promociones {
+        flex-grow: 100;
+    }
 
 
-/*/*/
-/*/*/
-/*//*/
-/*/*/
-/*//* FORMULARIO REGISTRO /*/
-/*//*/
-/*//*/
-/*//*/
-/*//*/
+/*/*//*/*//*//*//*/*//*//* FORMULARIO REGISTRO /*//*//*//*//*//*//*//*//*/
 
 .registro {
     display: flex;
@@ -180,15 +177,7 @@ p.SeleccioneCategoria,
 
 
 
-/*/*/
-/*/*/
-/*//*/
-/*/*/
-/*//* Footer /*/
-/*//*/
-/*//*/
-/*//*/
-/*//*/
+/*/*//*/*//*//*//*/*//*//* Footer /*//*//*//*//*//*//*//*//*/
 
 footer {
     text-align: center;
@@ -212,6 +201,7 @@ i.fas.fa-user-shield {
     font-size: 12px;
     margin-top: 0px;
 }
+
 
 
 
