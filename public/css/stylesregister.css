@@ -19,14 +19,12 @@ img {
     background-color: #EAC926;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-size: 24px;
 }
 
 
-.encabezado {
+.encabezado{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -40,19 +38,19 @@ h3 {
 a{
     cursor: pointer;
     text-decoration: underline;
-}
+}  
 
-.barra-busqueda {
+.barra-busqueda{
     width: 30vw;
 }
 
 
-.form {
+.form{
     width: 50%;
     font-size: 10px;
     padding: 5px;
     border-radius: 5px;
-    text-align: center;
+    text-align: center;  
     color: #03264C;
     height: 100%;
     align-self: center;
@@ -67,8 +65,7 @@ i.fa-search {
 }
 
 
-.barra-navegacion,
-.descripcion {
+.barra-navegacion, .descripcion {
     display: none;
 }
 
@@ -88,13 +85,6 @@ i.fa-search {
     padding: 10px;
     border-radius: 6px;
 }
-
-
-.logo,
-    .form,
-    .promociones {
-        flex-grow: 100;
-    }
 
 
 /*/*//*/*//*//*//*/*//*//* FORMULARIO REGISTRO /*//*//*//*//*//*//*//*//*/
@@ -122,6 +112,11 @@ i.fa-search {
     padding: 2px;
 }
 
+.datos{
+position: relative;
+top: 5px;
+}
+
 input {
     width: 50%;
     border-radius: 5px;
@@ -135,7 +130,11 @@ input {
     flex-flow: column wrap;
     padding: 9px 13px;
     align-items: center;
-    align-content: center;
+    align-content: center
+}
+
+.usuario{
+    text-align: center;
 }
 
 p.tituloUsuario,
@@ -281,5 +280,10 @@ i.fas.fa-user-shield {
 
     .piePagina {
         padding: 7px;
+    }
+
+    a{
+        cursor: pointer;
+        text-decoration: underline;
     }
 }

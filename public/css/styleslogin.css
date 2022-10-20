@@ -119,8 +119,6 @@ i.fas.fa-user-shield {
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    padding: 20px 1px 20px 1px;
-    background-color: #dde5e9e3;
     border-radius: 5px;
 }
 
@@ -130,6 +128,7 @@ i.fas.fa-user-shield {
     margin: 10px 0px;
     flex-flow: column wrap;
     padding: 10px;
+    background-color: #c6c2c2e3;
 }
 
 input  {    
@@ -148,7 +147,7 @@ input  {
     border-radius: 4px;
     margin: 10px 4vw;
     flex-flow: row wrap;
-    width: 50%;
+    width: 30%;
 }
 
 .botonEnviar:hover{
@@ -231,6 +230,10 @@ input  {
         padding: 7px;
     }
 
+    a{
+        cursor: pointer;
+        text-decoration: underline;
+    }
 }
 
 

@@ -35,10 +35,6 @@ h1, h2, h3 {
     width: 50%;
 }
 
-a{
-    cursor: pointer;
-    text-decoration: underline;
-}
 
 .barra-busqueda{
     width: 30vw;
@@ -236,7 +232,7 @@ i.fas.fa-user-shield {
        font-size: 14px;
     }
     
-    a{
+    .categ{
         padding: 14px;
     }
 
@@ -249,6 +245,8 @@ i.fas.fa-user-shield {
 
 
 }
+
+
 
 @media(min-width: 769px) {
     .flex-productos article{
@@ -267,5 +265,11 @@ i.fas.fa-user-shield {
     .piePagina{
         padding: 7px;
     }
+
+    a{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
 
 }
